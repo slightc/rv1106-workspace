@@ -1300,7 +1300,7 @@ function build_clean() {
 		rm -rf ${DTS_CONFIG} ${KERNEL_DEFCONFIG} ${BUILDROOT_DEFCONFIG}
 		rm -rf ${SDK_ROOT_DIR}/output ${SDK_ROOT_DIR}/config
 		rm -rf ${SDK_ROOT_DIR}/sysdrv/source/kernel/out
-		rm -rf ${BOARD_CONFIG}
+		# rm -rf ${BOARD_CONFIG}
 		if [ -d ${SDK_SYSDRV_DIR}/source/buildroot ] && [ "$LF_TARGET_ROOTFS" = "buildroot" ]; then
 			rm -rf ${SDK_SYSDRV_DIR}/source/buildroot
 		fi
