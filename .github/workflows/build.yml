@@ -21,7 +21,8 @@ jobs:
     
     - name: Build project
       run: |
-        ./build.sh clean
+        touch ~/.bash_profile
+        source tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/env_install_toolchain.sh
         ./build.sh
       
     - name: Upload build artifacts
